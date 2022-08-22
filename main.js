@@ -80,3 +80,31 @@ function validarUsuarios() {
 //Imprimiedo la funcion de validar usuario e imprimiendo los registros actualizados
 validarUsuarios()
 console.log(regUsuario)
+
+//Creando array de saludos random
+const mensajes = ["mensaje random 1", "mensaje random 2", "mensaje random 3", "mensaje random 4"]
+let aleatorio = Math.floor(Math.random()*(mensajes.length))
+console.log(mensajes[aleatorio])
+
+//Creando elementos desde objetos
+for (const logeado of regUsuario) {
+        let contenedor = document.createElement("div")
+        contenedor.innerHTML = `<h3> Nombre: ${logeado.nombre} </h3>         
+                                <p> DNI: ${logeado.dni} </p>
+                                <b> Estado: ${logeado.estado}</b>`
+        document.body.appendChild(contenedor)
+}
+
+//Ingresando datos para modificar el DOM
+let modifica1 = document.getElementById("modificando")
+modifica1.innerHTML = `<h5 class="card-header">Area de Prestamos</h5>`
+
+let modifica2 = document.getElementById("modificando2")
+modifica2.innerHTML = `<h5 class="card-title">Prestamos a tu medida</h5>`
+
+let modifica3 = document.getElementById("modificando3")
+modifica3.innerHTML = `<p class="card-text">Con Cash Now podras tener tu dinero en menos de 30 minutos, al alcance de tus manos.</p>`
+
+let modifica4 = document.getElementById("modificando4")
+modifica4.innerHTML = `<a href="#" class="btn btn-primary">Pedir prestamo ahora..</a>`
+
