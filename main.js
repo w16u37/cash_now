@@ -108,3 +108,27 @@ modifica3.innerHTML = `<p class="card-text">Con Cash Now podras tener tu dinero 
 let modifica4 = document.getElementById("modificando4")
 modifica4.innerHTML = `<a href="#" class="btn btn-primary">Pedir prestamo ahora..</a>`
 
+//Trabajando con eventos
+// function handleClickBtnPrincipal(){
+//         console.log("Respuesta a evento")
+// }
+
+// function handleSumar(){}
+// function handleRestar(){}
+function handleOtraCosa(){
+        console.log("Ingresa aquí tu nombre:")
+}
+
+// let boton = document.getElementById("BtnPrincipal")
+// boton.addEventListener("Click", handleClickBtnPrincipal)
+
+let titulo = document.getElementById("validationServer01")
+titulo.addEventListener("focus", handleOtraCosa)
+
+// let div = document.getElementById("BtnPrincipal")
+// div.addEventListener("Click", handleClickBtnPrincipal)
+
+
+
+
+
