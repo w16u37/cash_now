@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>Cash Now</title>
 </head>
-<body>
+<body onload="saludo();">
     <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">        
         <div class="container">
@@ -22,15 +22,15 @@
                 <a class="nav-link active" aria-current="page" href="#">Prestamos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ahorros</a>
+                <a class="nav-link active" href="#">Ahorros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Inversiones</a>
+                <a class="nav-link active">Inversiones</a>
               </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Busqueda avanzada" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button class="btn btn-outline-success" type="submit">Buscar</button>                 
             </form>
           </div>
         </div>
@@ -39,12 +39,13 @@
 
 
       <div class="alert alert-primary" role="alert">
-        Solo por hoy, si realizas un prestamo mayor a S/. 1000.00 te otorgamos una tasa preferencial de hasta el 10%..!! ¿Qué esperas?
+        Solo por hoy, si realizas un prestamo mayor a S/. 1000.00 te otorgamos una tasa preferencial de hasta el 10%..!! ¿Qué esperas? <button onclick="redirec2();" type="button" class="btn btn-danger me-3 sesion" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Cerrar Sesion</button>
       </div>
-
+      
+      <p id="bienvenido"></p>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/prestamo1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Préstamo Personal</h5>
@@ -55,7 +56,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/garantia_liquida.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Préstamo con garantía líquida</h5>
@@ -65,7 +66,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/garantia_hipotecaria3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Préstamo con garantía hipotecaría</h5>
@@ -75,7 +76,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/preferente.svg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cuentas de ahorro preferente</h5>
@@ -85,7 +86,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/efectivo3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cuenta Ahorro Efectivo</h5>
@@ -94,7 +95,7 @@
             </div>
           </div>
         </div><div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/360.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cuenta de ahorro 360</h5>
@@ -103,7 +104,7 @@
             </div>
           </div>
         </div><div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/platinum.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Tarjeta de Crédito Platinum</h5>
@@ -112,7 +113,7 @@
             </div>
           </div>
         </div><div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/oro2.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Tarjeta de Crédito Oro</h5>
@@ -121,7 +122,7 @@
             </div>
           </div>
         </div><div class="col">
-          <div class="card h-100">
+          <div class="card h-100 btn-outline-secondary">
             <img src="../images/clasica.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Tarjeta de Crédito Clásica</h5>
@@ -177,7 +178,7 @@
 
     
     
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
     </div>   
 </body>
 </html>

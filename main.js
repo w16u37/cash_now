@@ -56,6 +56,10 @@ function agregarUsuario() {
 // let boton = document.getElementById("autentica")
 // boton.onclick = () => {console.log("click")}
 
+function redirec2(){
+  location.href = "../index.html";
+}
+
 function redirec(){
   location.href = "pages/principal.html";
 }
@@ -74,10 +78,31 @@ form1.addEventListener('submit', (Event) => {
     if (buscarUsuario == true && buscarClave == true) {
       
       redirec();
+      
       // alert('Hola ' + usuarioValid + '!! Bienvenido al sistema de Cash Now, puedes operar');
     } else if (buscarUsuario == false || buscarClave == false) {
       let mensaje1 = document.getElementById("form1");
-      mensaje1.innerHTML = "<p>Usted no se encuentra registrado en nuestra base de datos, por favor registrese:</p><br><form><div><label>Nombre de usuario:</label><input/></div><div><label>Ingresar su Clave:</label><input/></div><button>Registrar</button>"
+      mensaje1.innerHTML = `<p>Como no estas registrado, Por favor completa los datos en el siguiente formulario:</p><form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ejemplo: admin@gmail.com</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Primer nombre</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ejemplo: Luky</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Enviarme noticias relevantes</label>
+      </div>
+      <button onclick="creadoExitoso();" type="submit" class="btn btn-primary">Crear</button>
+    </form>`
       
       // alert('Usted no se encuentra en nuestra Base de datos');
       // let deseaUsuario = prompt('Desea agregar un nuevo Usuario').toUpperCase();
@@ -94,7 +119,6 @@ form1.addEventListener('submit', (Event) => {
 
   validarUsuarios();
   
-
   //Creando elementos desde objetos
   //     for (const logeado of regUsuario) {
   //     let contenedor = document.createElement('div');
@@ -106,6 +130,67 @@ form1.addEventListener('submit', (Event) => {
   //   // console.log(usuarioValid, claveValid);
 });
 
+function registrarNuevo() {
+  let mensaje1 = document.getElementById("form1");
+      mensaje1.innerHTML = `<p>Por favor completa los datos en el siguiente formulario:</p><form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ejemplo: admin@gmail.com</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Primer nombre</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ejemplo: Luky</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Enviarme noticias relevantes</label>
+      </div>
+      <button onclick="creadoExitoso();" type="submit" class="btn btn-primary">Crear</button>
+    </form>`
+  }
+
+function olvidePass() {
+  let mensaje1 = document.getElementById("form1");
+      mensaje1.innerHTML = `<p>Te enviaremos un mensaje a tu correo, para que actualices tu password:</p><form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Ejemplo: admin@gmail.com</div>
+      </div>
+      <button onclick="link();" type="submit" class="btn btn-primary">Enviar</button>
+    </form>`
+  }
+
+  function saludo() {
+    let mensaje2 = document.getElementById("bienvenido");
+    mensaje2.innerHTML = `<h4>hola cuando termines de contratar tus servicios, por favor cierra sesion...</h4>`;
+  }
+
+  function link() {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Link enviado',
+      showConfirmButton: false,
+      timer: 1500
+    })
+}
+
+function creadoExitoso() {
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Usuario creado correctamente',
+    showConfirmButton: false,
+    timer: 1500
+  })
+}
 // const form1 = document.querySelector('form1');
 // console.log(regUsuario);
 // form1.addEventListener('submit', buscaUsu);

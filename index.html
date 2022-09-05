@@ -17,12 +17,7 @@
       <header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
         <h1 class="h4">
           <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <img
-              class="d-inline-block me-2"
-              width="40"
-              height="32"
-              src="images/icono1.png"
-            />
+            <img class="d-inline-block me-2" width="40" height="32" src="images/icono1.png" />
             <span>Login - CASH NOW S.A.C</span>
           </a>
         </h1>
@@ -32,8 +27,8 @@
       <h1>1.- Logueate para usar nuestro sistema Financiero..</h1>
       <div class="col-lg-8 px-0">
         <p class="fs-4">
-          Necesitas loguearte para usar todo el sistema financiero de <a href="https://getbootstrap.com/">CASH NOW</a>, y si no cuentas con uno, puedes
-          <a href="https://github.com/guybedford/es-module-shims">crear nuevo usuario</a> para que empieces a operar en el mundo financiero con nosotros.
+          Necesitas loguearte para usar todo el sistema financiero de <a href="#">CASH NOW</a>, y si no cuentas con uno, puedes <a onclick="registrarNuevo();" href="#">crear nuevo usuario</a> para que
+          empieces a operar en el mundo financiero con nosotros.
         </p>
         <p>Si tienes alguna pregunta, puedes contactarnos al WhatsApp: 999 999 999</p>
       </div>
@@ -50,8 +45,16 @@
         </div>
 
         <button id="autentica" type="submit" class="btn btn-primary me-3">Autenticar</button>
-        <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Crear nuevo usuario</button>
-        <a id="popoverButton" class="text-success" href="#" role="button" data-bs-toggle="popover" title="Custom popover" data-bs-content="This popover is created thanks to an ESM shim."
+        <button type="button" onclick="registrarNuevo();" class="btn btn-primary me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Crear nuevo usuario</button>
+        <a
+          id="popoverButton"
+          onclick="olvidePass();"
+          class="text-success"
+          href="#"
+          role="button"
+          data-bs-toggle="popover"
+          title="Custom popover"
+          data-bs-content="This popover is created thanks to an ESM shim."
           >¿Olvidaste tu contraseña?</a
         >
       </form>
@@ -91,7 +94,8 @@
       <p class="text-muted">Copyright © 2022 derechos reservados - MAJC</p>
     </div>
 
-    <script src="../main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
 
     <!-- <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.5/dist/es-module-shims.js"></script>
     <script type="importmap">
