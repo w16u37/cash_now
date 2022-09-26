@@ -1,0 +1,53 @@
+[
+{
+    "userId": 1,
+    "nombre": "miguel",
+    "apellido": "johnson",
+    "edad": 34,
+    "dni": 70442828,
+    "direccion": "Av. Coronel 321",
+    "clave": 123456,
+    "estado": true
+    },
+    {
+    "userId": 2,
+    "nombre": "juan",
+    "apellido": "ordoñez",
+    "edad": 40,
+    "dni": 12345678,
+    "direccion": "Av. Pacifico 232",
+    "clave": 987654,
+    "estado": false
+    },
+    {
+    "userId": 3,
+    "nombre": "vanesa",
+    "apellido": "palomino",
+    "edad": 32,
+    "dni": 34768593,
+    "direccion": "Av. Trapiche 345",
+    "clave": 444444,
+    "estado": true
+    },
+    {
+    "userId": 4,
+    "nombre": "sara",
+    "apellido": "jimenez",
+    "edad": 23,
+    "dni": 98876788,
+    "direccion": "Av. Tungasuca 578",
+    "clave": 980998,
+    "estado": false
+    },
+    {
+    "userId": 5,
+    "nombre": "julio",
+    "apellido": "salas",
+    "edad": 45,
+    "dni": 34098988,
+    "direccion": "Av. Delicias 445",
+    "clave": 321323,
+    "estado": true
+    }
+]
+

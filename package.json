@@ -1,0 +1,19 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "servidor_prueba",
+  "main": "main.js",
+  "scripts": {
+    "json:server": "json-server --watch ppersonal.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w16u37/cash_now.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w16u37/cash_now/issues"
+  },
+  "homepage": "https://github.com/w16u37/cash_now#readme"
+}

@@ -1,0 +1,26 @@
+{
+  "prestamos": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "nombres": "Julio Enrique",
+      "id": 3
+    },
+    {
+      "nombres": "Juana Magdalena",
+      "apellidos": "García Miro",
+      "email": "miro@yahoo.com",
+      "direccion": "Av. Naranjal 663",
+      "distrito": "Cercado",
+      "provincia": "Lima",
+      "Telefono": "999-999-999",
+      "monto": "S/. 1,000",
+      "plazo": "02 Meses",
+      "id": 4
+    }
+  ]
+}

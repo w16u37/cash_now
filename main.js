@@ -64,6 +64,10 @@ function redirec(){
   location.href = "pages/principal.html";
 }
 
+function redirec3(){
+  location.href = "formulario.html";
+}
+
 // Busqueda de usuarios por nombre
 const form1 = document.getElementById('form1');
 form1.addEventListener('submit', (Event) => {
@@ -191,6 +195,15 @@ function creadoExitoso() {
     timer: 1500
   })
 }
+
+// let miguel = document.querySelector("#lokito");
+// miguel.addEventListener("click", creadoExitoso)
+// for (let serv of miguel) {
+//   setTimeout(() => {
+//     hide("#lokito")
+//   }, 2000);
+// }
+
 // const form1 = document.querySelector('form1');
 // console.log(regUsuario);
 // form1.addEventListener('submit', buscaUsu);
